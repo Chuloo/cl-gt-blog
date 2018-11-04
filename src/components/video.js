@@ -1,9 +1,10 @@
 import React from "react";
 import {graphql, StaticQuery} from "gatsby"
+import config from "../../config"
 
 const Video = (props) => {
     const videoTitle = props.title;
-    const publicIdRoot = `gatsby-video-blog`
+    const publicIdRoot = config.rootFolder
     return (
     <StaticQuery
         query = {graphql `
